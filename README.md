@@ -9,4 +9,8 @@ MOODify is a Java console application that provides mood-based music and podcast
 - [Inheritance](#inheritance)
 - [Polymorphism](#polymorphism)
 
-## IMPLEMENTATION
+### IMPLEMENTATION
+Abstraction - AudioContent abstract class defining common structure and play() behavior
+Encapsulation - Private attributes with getters & setters in classes like AudioContent, Music, and Podcast
+Inheritance - Music and Podcast classes extend AudioContent
+Polymorphism - Overridden play() method behaves differently for Music and Podcast
