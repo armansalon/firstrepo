@@ -4,4 +4,7 @@ MOODify is a Java console application that provides mood-based music and podcast
 
 # TABLE OF CONTENTS 
 
+[Abstraction](#abstraction)
 [Encapsulation](#encapsulation)
+[Inheritance](#inheritance)
+[Polymorphism](#polymorphism)
