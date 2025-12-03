@@ -18,3 +18,14 @@ Inheritance - Music and Podcast classes extend AudioContent
 
 Polymorphism - Overridden play() method behaves differently for Music and Podcast
 
+# MAIN FEATURES
+[1] Mood Music        🎶  → Recommends music based on feeling
+
+[2] Podcasts          🎙️ → Displays podcast links (YouTube)
+
+[3] Manage Library    🛠️ → CRUD Operations
+
+[4] Show All          📚 → Shows all audio items
+
+[5] Exit              🚪
+
