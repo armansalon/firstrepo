@@ -11,27 +11,43 @@ Student Name, Section, Institution
 
 MOODify is a Java console application that provides mood-based music and podcast recommendations. Built on Object-Oriented Programming (OOP) principles, its core purpose is to demonstrate practical applications of inheritance, polymorphism, and abstraction in a real-world simulation.
 
-- [Abstraction](#abstraction)
-- [Encapsulation](#encapsulation)
-- [Inheritance](#inheritance)
-- [Polymorphism](#polymorphism)
+## **1. Abstraction**
+<details>
+<summary><b>Click to expand</b></summary>
 
-# IMPLEMENTATION 🎯
-1. Abstraction:  
-The core concept is the abstract superclass AudioContent.
+  The core concept is the abstract superclass AudioContent.
 It defines a common interface for all audio items (music and podcasts), specifying essential properties like title and duration and the abstract method play().
 Users of the AudioContent object (like LibraryManager or AppController) interact with it through its general methods without needing to know the specific implementation details of a Music or Podcast object.
-2. Inheritance:  
-The classes Music and Podcast inherit from the abstract class AudioContent.
+</details>
+
+## **2. Encapsulation**
+<details>
+<summary><b>Click to expand</b></summary>
+
+  The classes Music and Podcast inherit from the abstract class AudioContent.
 They inherit common fields (id, title, duration) and the play() method signature.
 This promotes code reusability as the common logic is centralized in the superclass.
-3. Polymorphism:   
-Method Overriding: Both Music and Podcast provide their own unique implementation of the inherited abstract method play().
+</details>
+
+## **3. Inheritance**
+<details>
+<summary><b>Click to expand</b></summary>
+
+  Method Overriding: Both Music and Podcast provide their own unique implementation of the inherited abstract method play().
 Music.play(): Prints the song title and artist.
 Podcast.play(): Prints the podcast title and link.
 Dynamic Behavior: In the AppController.showLibrary() method, we iterate over a List<AudioContent>, but call the specific play() method defined in the actual object type (Music or Podcast).
-4. Encapsulation:   
-All class variables are declared as private.
+</details>
+
+## **4. Polymorphism**
+<details>
+<summary><b>Click to expand</b></summary>
+
+  All class variables are declared as private.
+
+</details>
+
+```
 
 # MAIN FEATURES ✏️
 [1] Mood Music        🎶  → Recommends music based on feeling  
@@ -39,6 +55,8 @@ All class variables are declared as private.
 [3] Manage Library    🛠️ → CRUD Operations  
 [4] Show All          📚 → Shows all audio items  
 [5] Exit              🚪  
+
+```
 
 # PROGRAM STRUCTURE ✏️
 
@@ -70,12 +88,25 @@ All class variables are declared as private.
 # HOW TO RUN THE PROGRAM 🔍
 Follow these steps to compile and run the MOODify application using the command line:   
 
-  1. Save Files: Ensure all class files (MOODify.java, AudioContent.java, Music.java, Podcast.java, LibraryManager.java, AppController.java, AudioUtil.java) are saved in the same directory (e.g., in a folder named src).   
-  2. Navigate: Open your command line (Terminal or Command Prompt) and navigate to the directory where your source files are located.   
-  3. Compile: Compile the Java source files. The *.java wildcard compiles all files.
-javac *.java   
+```
+  1. Save Files: Ensure all class files (MOODify.java, AudioContent.java, Music.java, Podcast.java,
+LibraryManager.java, AppController.java, AudioUtil.java) are saved in the same directory (e.g., in a folder named src).
+```
+```
+  2. Navigate: Open your command line (Terminal or Command Prompt) and navigate to the directory
+ where your source files are located.   
+```
+```
+
+3. Compile: Compile the Java source files. The *.java wildcard compiles all files.
+javac *.java
+```
+```
+
   4. Run: Execute the compiled program by calling the main class, MOODify
 java MOODify   
+
+```
 
 # SAMPLE OUTPUT 🔎
 Sample Output
