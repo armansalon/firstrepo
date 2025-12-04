@@ -23,7 +23,21 @@ MOODify is a Java console application that provides mood-based music and podcast
   The core concept is the abstract superclass AudioContent.
 It defines a common interface for all audio items (music and podcasts), specifying essential properties like title and duration and the abstract method play().
 Users of the AudioContent object (like LibraryManager or AppController) interact with it through its general methods without needing to know the specific implementation details of a Music or Podcast object.
-</details>
+</details>  
+
+```
+abstract class AudioContent {
+
+    // #Encapsulation
+    private String id;
+    private String title;
+    private int duration;
+
+    public AudioContent(String id, String title, int duration) {
+        this.id = id;
+        this.title = title;
+        this.duration = duration;
+```
 
 ## **2. Encapsulation**
 <details>
