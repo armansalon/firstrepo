@@ -218,9 +218,9 @@ Updated.
 Contributors
 This project was developed by:   
 
-ABANILLA, SHANE M.  
-CAMACHO, JANINE A.  
-JARQUE, SYKES ANDREI I.
+👧 ABANILLA, SHANE M.  
+👧 CAMACHO, JANINE A.  
+👦 JARQUE, SYKES ANDREI I.
 
 ## Acknowledgement:   
 
