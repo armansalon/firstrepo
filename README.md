@@ -26,6 +26,7 @@ Users of the AudioContent object (like LibraryManager or AppController) interact
 </details>  
 
 ```
+// #Abstraction
 abstract class AudioContent {
 
     // #Encapsulation
@@ -37,6 +38,7 @@ abstract class AudioContent {
         this.id = id;
         this.title = title;
         this.duration = duration;
+    }
 ```
 
 ## **2. Encapsulation**
@@ -48,6 +50,24 @@ They inherit common fields (id, title, duration) and the play() method signature
 This promotes code reusability as the common logic is centralized in the superclass.
 </details>
 
+  ```
+ // #Encapsulation
+    private String id;
+    private String title;
+    private int duration;
+
+    public AudioContent(String id, String title, int duration) {
+        this.id = id;
+        this.title = title;
+        this.duration = duration;
+    }
+
+    // #Encapsulation
+    public String getId() { return id; }
+    public String getTitle() { return title; }
+    public int getDuration() { return duration; }
+    public void setTitle(String title) { this.title = title; }
+```
 ## **3. Inheritance**
 <details>
 <summary><b>Click to expand</b></summary>
@@ -58,6 +78,16 @@ Podcast.play(): Prints the podcast title and link.
 Dynamic Behavior: In the AppController.showLibrary() method, we iterate over a List<AudioContent>, but call the specific play() method defined in the actual object type (Music or Podcast).
 </details>
 
+    // #Inheritance
+    class Podcast extends AudioContent {
+
+    // #Encapsulation
+    private String link;
+
+    public Podcast(String id, String title, String link, int duration) {
+        super(id, title, duration);
+        this.link = link;
+        
 ## **4. Polymorphism**
 <details>
 <summary><b>Click to expand</b></summary>
@@ -66,6 +96,13 @@ Dynamic Behavior: In the AppController.showLibrary() method, we iterate over a L
 
 </details>
 
+```
+// #Polymorphism
+    private Map<String, AudioContent> library = new LinkedHashMap<>();
+    private Map<String, List<Music>> moodMap = new HashMap<>();
+    private List<Podcast> podcasts = new ArrayList<>();
+    private int idCounter = 1;
+```
 # MAIN FEATURES ✏️
 ```
 
